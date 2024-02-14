@@ -10,7 +10,7 @@ r: int
 for i in range(n):
     l, r = map(int, input().split())
     b[l] += 1
-    b[r+1] -= 1
+    b[r] -= 1
 
 ans: int = 0
 for i in range(t):
