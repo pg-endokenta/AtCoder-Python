@@ -7,7 +7,7 @@ x: list[list[int]] = [[0] * (w+1) for _ in range(h+1)]
 input_row: list[int]
 for i in range(1,h+1):
     input_row = list(map(int, input().split()))
-    x[i][0] = [0]
+    x[i][0] = 0
     for j in range(w):
         x[i][j+1] = input_row[j]
 
