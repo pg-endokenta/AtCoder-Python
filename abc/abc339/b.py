@@ -29,10 +29,9 @@ class Agent:
             self.y += h
         elif self.y >= h:
             self.y -= h
-    
+
     def rotate(self, direction):
         self.direction = (self.direction + direction) % 4
-
 
 
 agent = Agent(0, 0, 0)
@@ -42,7 +41,7 @@ for i in range(n):
         grid[agent.y][agent.x] = "#"
         agent.rotate(1)
         agent.move()
-    
+
     else:
         grid[agent.y][agent.x] = "."
         agent.rotate(-1)

@@ -13,6 +13,6 @@ for i in range(n):
         min = sum
 
 if min < 0:
-    print(abs(min)+sum)
+    print(abs(min) + sum)
 else:
     print(sum)

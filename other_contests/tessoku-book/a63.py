@@ -1,11 +1,10 @@
 from collections import deque
 
-
 n: int
 m: int
 n, m = map(int, input().split())
 
-graph: list[list[int]] = [[] for _ in range(n+1)]
+graph: list[list[int]] = [[] for _ in range(n + 1)]
 
 a: int
 b: int
@@ -15,7 +14,7 @@ for i in range(m):
     graph[a].append(b)
     graph[b].append(a)
 
-dist: list[int] = [-1] * (n+1)
+dist: list[int] = [-1] * (n + 1)
 
 q: deque[int] = deque()
 q.append(1)
@@ -28,5 +27,5 @@ while len(q) > 0:
             dist[e] = dist[v] + 1
             q.append(e)
 
-for i in range(1, n+1):
+for i in range(1, n + 1):
     print(dist[i])

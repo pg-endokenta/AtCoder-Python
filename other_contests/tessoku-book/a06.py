@@ -6,11 +6,11 @@ a = list(map(int, input().split()))
 s = []
 s.append(0)
 for i in range(n):
-    s.append(s[i]+a[i])
+    s.append(s[i] + a[i])
 
 
-l: int
-r: int
+left: int
+right: int
 for i in range(q):
-    l, r = map(int, input().split())
-    print(s[r]-s[l-1])
+    left, right = map(int, input().split())
+    print(s[right] - s[left - 1])

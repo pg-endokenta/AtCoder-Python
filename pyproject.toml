@@ -1,0 +1,8 @@
+[project]
+name = "atcoder-python"
+# Support Python 3.10+.
+requires-python = ">=3.10"
+
+[tool.ruff.lint]
+select = ["ALL"]
+ignore = ["T201"]

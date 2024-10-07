@@ -11,4 +11,3 @@ for i in range(q):
         a.append(num2)
     if num1 == 2:
         print(a[-1 * num2])
-

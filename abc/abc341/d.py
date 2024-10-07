@@ -11,7 +11,7 @@ lcm: int = math.lcm(n, m)
 
 while left < right:
     mid: int = (left + right) // 2
-    cnt: int = (mid // n) + (mid // m) - 2*(mid // lcm)
+    cnt: int = (mid // n) + (mid // m) - 2 * (mid // lcm)
 
     if cnt < k:
         left = mid + 1
