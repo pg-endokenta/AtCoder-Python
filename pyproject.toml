@@ -5,4 +5,12 @@ requires-python = ">=3.10"
 
 [tool.ruff.lint]
 select = ["ALL"]
-ignore = ["T201"]
+ignore = ["COM812", "D100", "D104", "D203", "D213", "ISC001", "T201"]
+
+# COM812 はwarningでignoreしろって言われた
+# D100: public moduleのdocstringはいらないため
+# D104: __init__.pyにdocstringはいらないため
+# D203: warning D211とincompatible
+# D213: warning D212とincompatible
+# ISC001: warningでignoreしろって言われた
+# T201: print()は使って良い

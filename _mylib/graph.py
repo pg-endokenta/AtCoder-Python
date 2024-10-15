@@ -7,7 +7,7 @@ n = int(input())
 graph = defaultdict(list)
 a: int
 b: int
-for i in range(n):
+for _ in range(n):
     a, b = map(int, input().split())
     graph[a].append(b)
     graph[b].append(a)
