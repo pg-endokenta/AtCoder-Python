@@ -1,12 +1,12 @@
 # pythonコードのリント
 .PHONY: ruff-check
 ruff-check:
-	ruff check --fix $(path)
+	uvx ruff check --fix $(path)
 
 # pythonコードのフォーマット
 .PHONY: ruff-format
 ruff-format:
-	ruff format $(path)
+	uvx ruff format $(path)
 
 # pythonコードのフォーマットとリント
 .PHONY: ruff
@@ -23,3 +23,7 @@ mypy:
 check:
 	@make ruff path=$(path)
 	@make mypy path=$(path)
+
+make fmt:
+	uvx ruff check --fix
+	uvx ruff format

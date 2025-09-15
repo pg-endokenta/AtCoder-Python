@@ -1,11 +1,14 @@
 [project]
 name = "atcoder-python"
-# Support Python 3.10+.
-requires-python = ">=3.10"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = []
 
 [tool.ruff.lint]
 select = ["ALL"]
-ignore = ["COM812", "D100", "D104", "D203", "D213", "ISC001", "T201"]
+ignore = ["COM812", "D100", "D104", "D203", "D213", "ISC001", "T201", "E741"]
 
 # COM812 はwarningでignoreしろって言われた
 # D100: public moduleのdocstringはいらないため
@@ -14,3 +17,4 @@ ignore = ["COM812", "D100", "D104", "D203", "D213", "ISC001", "T201"]
 # D213: warning D212とincompatible
 # ISC001: warningでignoreしろって言われた
 # T201: print()は使って良い
+# E741: 曖昧な変数名 l とかがコードに現れるのは仕方がない
